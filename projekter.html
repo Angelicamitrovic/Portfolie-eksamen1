@@ -1,0 +1,157 @@
+<!doctype html>
+<html lang="da">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Angelica portfolie</title>
+    <meta name="description" content="Portfolie hjemmeside af multimediedesigner Angelica chikri" />
+    <link rel="shortcut icon" href="images/favicon.png" type="image/png" />
+    <link rel="stylesheet" href="css/generel.css" />
+    <link rel="stylesheet" href="css/customproperties.css" />
+    <link rel="stylesheet" href="Js/burger.js" />
+    <link rel="stylesheet" href="css/burger.css" />
+    <link rel="stylesheet" href="css/projekter.css" />
+  </head>
+  <body>
+    <header>
+      <!-- logo -->
+      <div class="logo">
+        <a href="index.html"><img src="images/logo.svg" alt="logo" /></a>
+      </div>
+
+      <!-- menu  -->
+
+      <nav class="main_nav">
+        <ul class="menu">
+          <li class="menu-item active"><a class="menu-link" href="projekter.html">Projekter</a></li>
+          <li class="menu-item"><a class="menu-link" href="om_mig.html">Om mig</a></li>
+        </ul>
+
+        <!-- burger menu -->
+        <button class="burger">
+          <span class="line"></span>
+          <span class="line"></span>
+          <span class="line"></span>
+        </button>
+      </nav>
+
+      <!-- <nav>
+        <ul class="menu">
+          <li><a href="projekter.html">Projekter</a></li>
+          <li class="streg">|</li>
+          <li><a href="om_mig.html">Om mig</a></li>
+        </ul> -->
+
+      <!-- burger menu -->
+      <!-- <button class="burger">
+          <span class="line"></span>
+          <span class="line"></span>
+          <span class="line"></span>
+        </button>
+      </nav> -->
+    </header>
+
+    <main>
+      <section class="sekunder_nav">
+        <div>
+          <h1 class="hero">MINE PROJEKTER</h1>
+        </div>
+
+        <ul class="projekt-menu">
+          <li class="projekt-item"><a class="h" href="web.html"> GRUNDLÆGGENDE WEB</a></li>
+          <li class="projekt-item"><a class="h" href="ux.html">GRUNDLÆGGENDE UX</a></li>
+          <li class="projekt-item"><a class="h" href="brugergrænseoverflade.html"> GRUNDLÆGGENDE BRUGERGRÆNSEFLADEUDVIKLING</a></li>
+          <li class="projekt-item"><a class="h" href="indhold.html">GRUNDLÆGGENDE INDHOLD</a></li>
+        </ul>
+
+        <!-- ERROR div må ikke være child til ul (lav a i stedet?) -->
+        <!-- 
+        <nav class="flex">
+          <ul class="menu2">
+            <div class="streg2_menu">
+              <li class="streg2">|</li>
+              <li><a class="h" href="web.html"> GRUNDLÆGGENDE WEB</a></li>
+            </div>
+            <div class="streg2_menu">
+              <li class="streg2">|</li>
+              <li><a class="h" href="ux.html">GRUNDLÆGGENDE UX</a></li>
+            </div>
+
+            <div class="streg2_menu">
+              <li class="streg2">|</li>
+              <li><a class="h" href="brugergrænseoverflade.html"> GRUNDLÆGGENDE BRUGERGRÆNSEFLADEUDVIKLING</a></li>
+            </div>
+
+            <div class="streg2_menu">
+              <li class="streg2">|</li>
+              <li><a class="h" href="indhold.html">GRUNDLÆGGENDE INDHOLD</a></li>
+            </div>
+          </ul>
+        </nav> -->
+      </section>
+
+      <section class="wrapper">
+        <div class="grid_1-1">
+          <div id="web" class="cards">
+            <h2 class="h">GRUNDLÆGGENDE WEB</h2>
+            <img class="cards imgleft" src="images/web/web5_result.webp" alt="Hjemmside" />
+            <div class="se_projekt imgleft">
+              <a href="web.html">SE PROJEKT</a>
+            </div>
+          </div>
+
+          <div id="ux" class="cards">
+            <h2 class="h">GRUNDLÆGGENDE UX</h2>
+            <img class="cards imgright" src="images/ux/ux6_result.webp" alt="Hjemmeside" />
+            <div class="se_projekt imgright">
+              <a href="ux.html">SE PROJEKT</a>
+            </div>
+          </div>
+
+          <div class="svgmobil">
+            <img class="svg1" src="images/svg/projekter1_web.svg" alt="gul svg" />
+          </div>
+
+          <div class="svgmobil">
+            <img class="svg2" src="images/svg/projekter2_web.svg" alt="gul svg" />
+          </div>
+
+          <div id="bruger" class="cards">
+            <h2 class="h">GRUNDLÆGGENDE BRUGERGRÆNSEFLADEUDVIKLING</h2>
+            <img class="cards imgleft" src="images/em/em4_result.webp" alt="Hjemmeside" />
+            <div class="se_projekt imgleft">
+              <a href="brugergrænseoverflade.html">SE PROJEKT</a>
+            </div>
+          </div>
+
+          <div id="indhold" class="cards">
+            <h2 class="h">GRUNDLÆGGENDE INDHOLD</h2>
+            <img class="cards imgright" src="images/projekter/indhold.webp" alt="Hjemmeside" />
+            <div class="se_projekt imgright">
+              <a href="indhold.html">SE PROJEKT</a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <div class="wrapperfooter">
+      <footer class="kontaktmig">
+        <img class="svgfooter" src="images/svg/footer.svg" alt="gul svg" />
+
+        <div class="footer">
+          <h2 class="footer_h">KONTAKT MIG</h2>
+          <h3 class="footer_p">Email: Anch0015@stud.ek.dk</h3>
+
+          <div class="flex">
+            <h3 class="footer_p">tlf: +45 22959616</h3>
+
+            <h3 id="portfolie" class="footer_p">PORTFOLIE 2025</h3>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script src="Js/Js/burger.js"></script>
+  </body>
+</html>

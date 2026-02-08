@@ -1,0 +1,64 @@
+/* farver */
+:root {
+  /* main farver */
+  --color-bg: #faf7f1;
+  --color-text: #5c899e;
+  --color-text-hover: #e4b96f;
+
+  /* button farver */
+  --color-btn-bg: #5c899e;
+  --color-btn-text: #faf7f1;
+  --color-btn-hover: #689bb2;
+
+  /* menu farver */
+  --color-menu-text: #5c899e;
+  --color-menu-hover: #e4b96f;
+}
+
+/* fonts */
+
+@font-face {
+  font-family: "Anton";
+  src: url("../fonts/Anton-Regular.woff2");
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Anuphan_bold";
+  src: url("../fonts/Anuphan-VariableFont_wght.woff2");
+}
+
+@font-face {
+  font-family: "Anuphan_regular";
+  src: url("../fonts/Anuphan-VariableFont_wght.woff2");
+  font-style: normal;
+}
+
+:root {
+  --font-family-hero: "Anton";
+  --font-family-h: "Anuphan_bold";
+  --font-family-p: "Anuphan_regular";
+  /* fontweight? */
+}
+
+.hero {
+  font-family: var(--font-family-hero);
+  font-size: 350%;
+}
+
+.h {
+  font-family: var(--font-family-h);
+}
+
+.p {
+  font-family: var(--font-family-p);
+  font-size: 200%;
+}
+
+.footer_h {
+  font-family: var(--font-family-h);
+}
+
+.footer_p {
+  font-family: var(--font-family-p);
+}

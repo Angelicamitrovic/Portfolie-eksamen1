@@ -1,0 +1,108 @@
+main {
+  margin: 0 auto;
+}
+
+/* mobilsite */
+
+.hero,
+.p {
+  text-align: center;
+}
+
+.hero {
+  margin-top: 1em;
+  margin-bottom: 0;
+  font-size: 400%;
+  text-shadow: 2.5px 2.3px 0.5px rgba(0, 0, 0, 0.176);
+}
+
+.p {
+  margin-top: 0;
+  padding-top: 0;
+}
+
+.mmd_mobil h2 {
+  margin-top: 0;
+}
+
+.mmd_web {
+  display: none;
+}
+
+.svgmobil {
+  text-align: center;
+  transform: translate(0px, -200px);
+  margin: 0;
+}
+
+.svgweb {
+  display: none;
+}
+
+.images {
+  z-index: 2;
+  position: relative;
+  transform: translate(0px, 0px);
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: 30px -9px 12px rgba(0, 0, 0, 0.3);
+}
+
+/* website */
+@media screen and (width > 800px) {
+  .hero {
+    font-size: 600%;
+  }
+  .mmd_web {
+    display: block;
+  }
+  .mmd_mobil {
+    display: none;
+  }
+
+  div .svgmobil {
+    display: none;
+  }
+
+  .grid_2-1 {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+  }
+
+  div .hero,
+  .mmd_web {
+    grid-column: 1/2;
+  }
+
+  .mmd_web {
+    z-index: 2;
+    position: absolute;
+    margin-top: 23em;
+    margin-left: 15em;
+  }
+
+  div .svgweb {
+    display: block;
+    grid-row: 2/3;
+    z-index: 1;
+    position: relative;
+    margin-right: -90px;
+    max-width: 650px;
+    max-height: 900px;
+  }
+
+  /* billed forsøg 1 */
+
+  .images {
+    z-index: 2;
+    position: relative;
+    transform: translate(850px, -750px);
+    width: 450px;
+    height: 450px;
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: 30px -9px 12px rgba(0, 0, 0, 0.132);
+  }
+}

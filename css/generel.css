@@ -1,0 +1,163 @@
+body {
+  background-color: var(--color-bg);
+  margin: 0 2em;
+  display: grid;
+  align-items: center;
+}
+
+h1,
+h2,
+h3,
+p {
+  color: var(--color-text);
+}
+
+/* logo */
+
+.logo {
+  margin: 0;
+}
+
+/* header */
+
+.main-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* menu skjult på mobil */
+.menu {
+  display: none;
+  list-style: none;
+  padding: 0;
+  margin: 3em 0;
+}
+
+/* links */
+.menu-link {
+  position: relative;
+  text-decoration: none;
+  color: #4f6f7a;
+  padding-bottom: 4px;
+}
+
+.menu-item.active .menu-link {
+  color: #c59b5a;
+}
+
+/* gul streg under aktiv side */
+.menu-item.active .menu-link::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 2px;
+  background-color: #c59b5a;
+}
+/* .menu-link.active::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 2px;
+  background-color: #c59b5a;
+} */
+
+ul a {
+  text-decoration: none;
+  list-style: none;
+  color: var(--color-text);
+  font-family: var(--font-family-h);
+}
+
+/*  
+nav a,
+.streg {
+  font-size: x-large;
+}
+
+li {
+  padding: 0 0.2em;
+} */
+
+/* footer */
+footer {
+  margin-top: 10em;
+  padding-top: 5em;
+}
+
+.flex {
+  display: flex;
+  justify-content: space-between;
+}
+
+#portfolie {
+  text-align: end;
+  font-size: small;
+}
+
+.wrapperfooter {
+  overflow: hidden;
+}
+
+.kontaktmig {
+  position: relative;
+}
+
+.svgfooter {
+  position: absolute;
+  top: 0;
+
+  transform: translate(-5em, -2em);
+  max-height: 442px;
+  max-width: 672px;
+}
+
+.footer {
+  position: relative;
+  z-index: 1;
+  padding: 0 1em;
+}
+
+@media screen and (width > 800px) {
+  .menu {
+    display: flex;
+    gap: 32px;
+  }
+
+  .menu-item {
+    position: relative;
+  }
+
+  /* divider mellem punkterne */
+  .menu-item:not(:last-child)::after {
+    content: "|";
+    position: absolute;
+    right: -18px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #4f6f7a;
+  }
+
+  /* footer */
+  .svgfooter {
+    position: absolute;
+    top: -100px;
+    left: -20em;
+    max-height: 2260px;
+    max-width: 2142px;
+  }
+
+  .footer {
+    position: relative;
+    z-index: 1;
+    padding: 6em 1em 0;
+  }
+
+  .wrapperfooter {
+    margin-top: 10em;
+  }
+}

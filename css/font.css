@@ -1,0 +1,35 @@
+@font-face {
+  font-family: "Anton";
+  src: url("../fonts/Anton-Regular.woff2");
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Anuphan_bold";
+  src: url("../fonts/Anuphan-VariableFont_wght.woff2");
+}
+
+@font-face {
+  font-family: "Anuphan_regular";
+  src: url("../fonts/Anuphan-VariableFont_wght.woff2");
+  font-style: normal;
+}
+
+:root {
+  --font-family-hero: "Anton";
+  --font-family-h: "Anuphan_bold";
+  --font-family-p: "Anuphan_regular";
+  /* fontweight? */
+}
+
+.hero {
+  font-family: var(--font-family-hero);
+}
+
+.h {
+  font-family: var(--font-family-h);
+}
+
+.p {
+  font-family: var(--font-family-p);
+}
