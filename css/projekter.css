@@ -174,40 +174,6 @@ div .cards {
     color: #4f6f7a;
   }
 
-  /* .projekt-menu {
-    display: flex;
-    gap: 24px;
-  }
-
-  .projekt-item::before {
-    content: "";
-  } */
-
-  /* .projekt-item:not(:last-child)::after {
-    content: "|";
-    position: absolute;
-    right: -14px;
-    top: 50%;
-    transform: translateY(-50%);
-    color: #4f6f7a;
-  } */
-  /* nav .menu2 {
-    display: flex;
-    margin: 2em 2em 5em 0;
-  }
-  .menu2 a {
-    font-size: larger;
-  }
-
-  .streg2 {
-    padding: 0;
-  }
-
-  .flex a {
-    padding: 1em;
-    white-space: nowrap;
-  } */
-
   /* grid */
   .grid_1-1 {
     display: grid;
@@ -222,6 +188,7 @@ div .cards {
   #web {
     grid-column: 1/1;
     grid-row: 1/1;
+    margin-top: 4em;
   }
 
   #ux {
