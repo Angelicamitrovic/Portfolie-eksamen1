@@ -74,25 +74,6 @@
   margin-bottom: 0.5em;
 }
 
-/* 
-.se_sandkassesite a:hover {
-  color: var(--color-menu-hover);
-} */
-/* .streg2_menu {
-  display: flex;
-}
-.menu2 {
-  padding-left: 0;
-}
-
-.menu2 li {
-  padding-bottom: 0.5em;
-}
-
-.menu2 a:hover {
-  color: var(--color-menu-hover);
-} */
-
 /* general */
 
 .indhold_overskrift {
@@ -228,10 +209,6 @@ h2 a {
     color: #4f6f7a;
   }
 
-  .hero {
-    font-size: xxx-large;
-  }
-
   .h {
     font-size: xx-large;
   }
@@ -239,25 +216,6 @@ h2 a {
   .p {
     font-size: x-large;
   }
-
-  /* sekundermenu */
-  /*   
-  nav .menu2 {
-    display: flex;
-    margin: 2em 2em 5em 0;
-  }
-  .menu2 a {
-    font-size: larger;
-  }
-
-  .streg2 {
-    padding: 0;
-  }
-
-  .flex a {
-    padding: 1em;
-    white-space: nowrap;
-  } */
 
   /* tekst */
 
